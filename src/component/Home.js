@@ -9,7 +9,7 @@ function Home() {
     <div className='App'>
       <div className="principalContainter">
         <h1 className='title'>hello, i'm Javier</h1>
-        <p className='text'>and here you can see and download muy resume :-)</p>
+        <p className='text'>and here you can see and download my resume :-)</p>
         <div className='buttonContainer'>
           <div className='resumeButton'><a href={Curriculum} target="_blank">spanish</a></div>
           <div className='resumeButton'><a href={Resume} target="_blank">english</a></div>
