@@ -18,7 +18,7 @@
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 50%;
+    max-width: 80%;
     text-align: center;
   }
   .title{
@@ -35,6 +35,7 @@
     background-color: rgb(58, 58, 58);
     color: #fff;
     width: 20%;
+    height: auto;
     padding: 3% 2%;
     margin: 2% 1%;
     font-size: 1.3rem;
@@ -48,6 +49,7 @@
   a{
     color: white;
     text-decoration: none;
+    font-size: 100%;
   }
   
   a:hover{
@@ -55,4 +57,55 @@
     text-decoration: none;
   }
  
+  @media screen and (max-width: 915px){
+    .principalContainter{
+      width: 100%;
+    }
+    .resumeButton{
+      font-size: 180%;
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+
+    .title{
+      font-size: 2.9rem;
+    }
+    .text{
+      font-size: 1.5rem;
+    }
+    .resumeButton{
+      font-size: 145%;
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 370px){
+
+    .title{
+      font-size: 2.6rem;
+    }
+    .text{
+      font-size: 1.4rem;
+    }
+    .resumeButton{
+      font-size: 120%;
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 330px){
+
+    .title{
+      font-size: 2rem;
+    }
+    .text{
+      font-size: 1rem;
+    }
+    .resumeButton{
+      font-size: 100%;
+      width: 50%;
+    }
+  }
   

@@ -32,6 +32,7 @@ function Contact() {
                 <h1 className='principalTitle'>contact me! :-)</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <br />
+                    <p className='titulosResponsive'>Name:</p>
                         <InputGroup>
                             <InputGroup.Text id="inputGroup-sizing-default">
                             name
@@ -43,7 +44,9 @@ function Contact() {
                             />  
                         </InputGroup>
                     <br />
+                    <p className='titulosResponsive'>Email:</p>
                         <InputGroup>
+                            
                             <InputGroup.Text id="inputGroup-sizing-default">
                                 email
                                 </InputGroup.Text>
@@ -54,13 +57,16 @@ function Contact() {
                             />
                         </InputGroup>
                     <br />
+                    <p className='titulosResponsive'>Message:</p>
                         <InputGroup>
                             <InputGroup.Text id="inputGroup-sizing-default-text-area">message</InputGroup.Text>
                             <Form.Control as="textarea" aria-label="With textarea" name="message" />
                         </InputGroup>
                     <br />
+                    
 
                     <input type="submit" value="Send Message" className='contactButton'/>
+                    <input type="submit" value="Send" className='contactButtonResponsive'/>
                 </form>
             </div>
             <Footer

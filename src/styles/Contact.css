@@ -17,11 +17,11 @@ body{
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 50%;
+    max-width: 80%;
     text-align: left;
     color: white;
     padding: 3%;
-    width: 45%;
+    width: 50%;
     text-align: center;
   }
 
@@ -30,10 +30,6 @@ body{
     font-size: 4rem;
     color: rgb(58, 58, 58);
 }
-.title{
-    font-size: 1.5rem;
-}
-
 .contactButton{
     color: white;
     margin-top: 0.1%;
@@ -43,12 +39,16 @@ body{
     padding: 1.4% 0;
     text-align: center;
     border-radius: 100px;
-    border: 0px;
     font-size: 1.2rem;
+    border: 0;
 }
 
 .contactButton:hover{
     background-color: rgb(75, 75, 75);
+}
+
+.titulosResponsive{
+  display: none;
 }
 
 #inputGroup-sizing-default{
@@ -62,4 +62,65 @@ body{
   color: white;
   padding: 0 3.5%;
   font-size: 1.19rem;
+}
+.contactButtonResponsive{
+  display: none;
+}
+@media screen and (max-width: 880px){
+  .principalTitle{
+    font-size: 3.2rem;
+  }
+  .subContainer{
+    width: 90%;
+  }
+  #inputGroup-sizing-default{
+    width: 17%;
+  }
+  #inputGroup-sizing-default-text-area{
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .principalTitle{
+    font-size: 2.5rem;
+  }
+  .subContainer{
+    width: 100%;
+
+  }
+  #inputGroup-sizing-default{
+    display: none;
+  }
+  #inputGroup-sizing-default-text-area{
+    display: none;
+  }
+  .titulosResponsive{
+    display: flex;
+    color:rgb(58, 58, 58);
+    margin: 0;
+  }
+  .contactButton{
+    display: none;
+  }
+  .contactButtonResponsive{
+    display: block;
+    color: white;
+    margin-top: 0.1%;
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+    width: 30%;
+    padding: 1.4% 0;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    border: 0;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+  .principalTitle{
+    font-size: 2.1rem;
+  }
 }
